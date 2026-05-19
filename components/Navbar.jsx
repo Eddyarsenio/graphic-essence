@@ -80,7 +80,7 @@ export default function Navbar() {
                 color:'var(--text-secondary)', textDecoration:'none', fontSize:'0.95rem',
               }}>{l.label}</a>
             ))}
-            <a href="https://wa.me/258876775897" className="btn-whatsapp"
+            <a href="https://wa.me/258876758971" className="btn-whatsapp"
               style={{ marginTop:8, justifyContent:'center', display:'flex', gap:8, alignItems:'center' }}>
               <MessageCircle size={16} /> Falar no WhatsApp
             </a>
