@@ -4,12 +4,13 @@ import { motion } from 'framer-motion'
 import { Play, Clock, ExternalLink } from 'lucide-react'
 
 const videos = [
-  { id:1, title:'Video de Apresentacao',    client:'PodTech MZ',     duration:'0:30', category:'Publicitário', accent:'rgba(239,68,68,0.10)',   src:'/videos/podtech.mp4', thumbnail:'/images/thumbnails/thumb1.jpg'   },
-  { id:2, title:'Odete Eventos — Gala de Fim de Ano',        client:'Odete Eventos',  duration:'1:20', category:'Eventos',      accent:'rgba(139,92,246,0.10)',  src:'/videos/placeholder-2.mp4', thumbnail:'/images/thumbnails/odete-eventos.jpg' },
+  { id:1, title:'Video de Apresentacao',    client:'PodTech MZ',     duration:'0:48', category:'Publicitário', accent:'rgba(239,68,68,0.10)',   src:'/videos/podtech.mp4', thumbnail:'/images/thumbnails/thumb1.jpg'   },
+  /*{ id:2, title:'Odete Eventos — Gala de Fim de Ano',        client:'Odete Eventos',  duration:'1:20', category:'Eventos',      accent:'rgba(139,92,246,0.10)',  src:'/videos/placeholder-2.mp4', thumbnail:'/images/thumbnails/odete-eventos.jpg' },
   { id:3, title:'Reel Clínica Dental — Antes & Depois',      client:'DentalCare MZ',  duration:'0:45', category:'Saúde',        accent:'rgba(16,185,129,0.10)',  src:'/videos/placeholder-3.mp4', thumbnail:'/images/thumbnails/dental.jpg'        },
   { id:4, title:'Motion Logo — Animação de Marca',           client:'Projecto Pessoal', duration:'0:10', category:'Motion',   accent:'rgba(59,130,246,0.10)',  src:'/videos/placeholder-4.mp4', thumbnail:'/images/thumbnails/motion.jpg'        },
   { id:5, title:'Reel Restaurante — Especial do Dia',        client:'Sabor do Mar',   duration:'0:20', category:'Restaurante', accent:'rgba(245,158,11,0.10)',  src:'/videos/placeholder-5.mp4', thumbnail:'/images/thumbnails/restaurante.jpg'   },
   { id:6, title:'Campanha Salão — Transformações',           client:'Hair Studio MZ', duration:'0:35', category:'Beleza',      accent:'rgba(236,72,153,0.10)',  src:'/videos/placeholder-6.mp4', thumbnail:'/images/thumbnails/salao.jpg'         },
+   */
 ]
 
 export default function Videos() {
