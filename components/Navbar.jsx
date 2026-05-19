@@ -54,7 +54,7 @@ export default function Navbar() {
         </nav>
 
         <div style={{ display:'flex', alignItems:'center', gap:12 }}>
-          <a href="https://wa.me/258876775897" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/258876758971" target="_blank" rel="noopener noreferrer"
             className="btn-primary hidden md:inline-flex" style={{ padding:'10px 22px', fontSize:'0.82rem', gap:8 }}>
             <MessageCircle size={15} /> WhatsApp
           </a>
