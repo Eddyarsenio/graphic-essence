@@ -66,7 +66,7 @@ export default function Hero() {
               <a href="#portfolio" className="btn-primary">
                 Ver Portfólio <ArrowRight size={16} />
               </a>
-              <a href="https://wa.me/258876775897" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+              <a href="https://wa.me/258876758971" target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
                 <MessageCircle size={16} /> WhatsApp
               </a>
             </motion.div>
@@ -108,7 +108,7 @@ export default function Hero() {
                   style={{ width:'100%', height:'100%', objectFit:'cover' }} />
                 ════════════════════════════════════════════
               */}
-              <img src="/images/edmilson.jpg.png" alt="Edmilson Massingue"
+              <img src="/images/logoge.png" alt="Edmilson Massingue"
                 style={{ width:'100%', height:'100%', objectFit:'cover' }} />
             </motion.div>
 
@@ -139,7 +139,7 @@ export default function Hero() {
                 <MapPin size={16} color="#111111" />
               </div>
               <div>
-                <div style={{ fontWeight:700, fontSize:'0.82rem' }}>Design Premium</div>
+                <div style={{ fontWeight:700, fontSize:'0.82rem' }}>Design de Qualidade</div>
                 <div style={{ fontSize:'0.7rem', color:'var(--text-muted)' }}>Maputo, MZ</div>
               </div>
             </motion.div>

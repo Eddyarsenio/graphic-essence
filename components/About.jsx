@@ -49,7 +49,7 @@ export default function About() {
                 <img src="/images/edmilson-sobre.jpg.png" alt="Edmilson"
                   style={{ borderRadius:16, width:'100%', aspectRatio:'1', objectFit:'cover', marginBottom:20 }} />
               */}
-              <img src="/images/edmilson-sobre.jpg.png" alt="Edmilson Massingue"
+              <img src="/images/edmilson.jpg.png" alt="Edmilson Massingue"
                 style={{ borderRadius:16, width:'100%', aspectRatio:'1', objectFit:'cover', marginBottom:20 }} />
 
               <div style={{ fontWeight:800, fontSize:'1.1rem', letterSpacing:'-0.02em' }}>Edmilson Massingue</div>

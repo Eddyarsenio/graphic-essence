@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Play, Clock, ExternalLink } from 'lucide-react'
 
 const videos = [
-  { id:1, title:'Campanha Frango JPX — Promoção Semanal',    client:'Frango JPX',     duration:'0:30', category:'Publicitário', accent:'rgba(239,68,68,0.10)',   src:'/videos/placeholder-1.mp4', thumbnail:'/images/thumbnails/frango-jpx.jpg'   },
+  { id:1, title:'Video de Apresentacao',    client:'PodTech MZ',     duration:'0:30', category:'Publicitário', accent:'rgba(239,68,68,0.10)',   src:'/videos/podtech.mp4', thumbnail:'/images/thumb1.jpg'   },
   { id:2, title:'Odete Eventos — Gala de Fim de Ano',        client:'Odete Eventos',  duration:'1:20', category:'Eventos',      accent:'rgba(139,92,246,0.10)',  src:'/videos/placeholder-2.mp4', thumbnail:'/images/thumbnails/odete-eventos.jpg' },
   { id:3, title:'Reel Clínica Dental — Antes & Depois',      client:'DentalCare MZ',  duration:'0:45', category:'Saúde',        accent:'rgba(16,185,129,0.10)',  src:'/videos/placeholder-3.mp4', thumbnail:'/images/thumbnails/dental.jpg'        },
   { id:4, title:'Motion Logo — Animação de Marca',           client:'Projecto Pessoal', duration:'0:10', category:'Motion',   accent:'rgba(59,130,246,0.10)',  src:'/videos/placeholder-4.mp4', thumbnail:'/images/thumbnails/motion.jpg'        },
@@ -37,14 +37,12 @@ export default function Videos() {
               className="glass-card" style={{ borderRadius:24, overflow:'hidden', cursor:'pointer' }}
               whileHover={{ scale:1.02 }}>
 
-              {/*
-                ══ THUMBNAIL DO VÍDEO ═══════════════════
-                Substituir o bloco abaixo por:
-                <img src={v.thumbnail} alt={v.title}
+              {
+                
+                <img src={thumb1.jpg} alt={v.title}
                   style={{ width:'100%', aspectRatio:'16/10', objectFit:'cover', display:'block' }} />
-                Pasta: /public/images/thumbnails/
-                ════════════════════════════════════════
-              */}
+                
+              }
               <div style={{
                 width:'100%', aspectRatio:'16/10', position:'relative',
                 background: v.accent, display:'flex', alignItems:'center', justifyContent:'center',

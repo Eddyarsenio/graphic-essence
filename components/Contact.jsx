@@ -6,7 +6,7 @@ import { Mail, Phone, Instagram, Facebook, MapPin, MessageCircle, Send } from 'l
 
 const contactItems = [
   { Icon:Mail,      label:'Email',       value:'cloudtv44@gmail.com',  href:'mailto:cloudtv44@gmail.com',            color:'rgba(208,21,21,0.08)',  border:'rgba(208,21,21,0.18)',  iconColor:'#D01515' },
-  { Icon:Phone,     label:'WhatsApp',    value:'+258 87 677 5897',     href:'https://wa.me/258876775897',            color:'rgba(37,211,102,0.08)', border:'rgba(37,211,102,0.20)', iconColor:'#25D366' },
+  { Icon:Phone,     label:'WhatsApp',    value:'+258 87 675 8971',     href:'https://wa.me/258876758971',            color:'rgba(37,211,102,0.08)', border:'rgba(37,211,102,0.20)', iconColor:'#25D366' },
   { Icon:Instagram, label:'Instagram',   value:'@graphic.essence',     href:'https://instagram.com/graphic.essence', color:'rgba(236,72,153,0.08)', border:'rgba(236,72,153,0.18)', iconColor:'#EC4899' },
   { Icon:Facebook,  label:'Facebook',    value:'Graphic Essence',      href:'https://facebook.com/GraphicEssence',   color:'rgba(59,130,246,0.08)', border:'rgba(59,130,246,0.18)', iconColor:'#3B82F6' },
   { Icon:MapPin,    label:'Localização', value:'Maputo, Moçambique',   href:null,                                    color:'rgba(245,158,11,0.08)', border:'rgba(245,158,11,0.20)', iconColor:'#F59E0B' },
@@ -20,7 +20,7 @@ export default function Contact() {
   const submit = e => {
     e.preventDefault()
     const msg = `Olá Edmilson!\n\nNome: ${form.name}\nTelefone: ${form.phone}\nServiço: ${form.service}\n\n${form.message}`
-    window.open(`https://wa.me/258876775897?text=${encodeURIComponent(msg)}`, '_blank')
+    window.open(`https://wa.me/258876758971?text=${encodeURIComponent(msg)}`, '_blank')
     setSent(true)
   }
 
@@ -55,7 +55,7 @@ export default function Contact() {
 
           {/* Info */}
           <motion.div initial={{ opacity:0, y:30 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.7 }}>
-            <a href="https://wa.me/258876775897" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/258876758971" target="_blank" rel="noopener noreferrer"
               className="btn-whatsapp"
               style={{ display:'flex', justifyContent:'center', alignItems:'center', gap:10, width:'100%', marginBottom:20, padding:'16px', fontSize:'0.95rem' }}>
               <MessageCircle size={18} /> Falar no WhatsApp Business
@@ -97,7 +97,7 @@ export default function Contact() {
                 <div style={{ fontWeight:800, fontSize:'1rem', marginBottom:4 }}>Enviar mensagem</div>
 
                 {[
-                  { name:'name',  label:'Nome completo',       placeholder:'Ex: João Silva' },
+                  { name:'name',  label:'Nome completo',       placeholder:'Ex: João Cossa' },
                   { name:'phone', label:'Telefone / WhatsApp', placeholder:'Ex: +258 84 000 0000' },
                 ].map(f => (
                   <div key={f.name}>

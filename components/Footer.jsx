@@ -6,7 +6,7 @@ import { Instagram, Facebook, Phone, Mail, MapPin, MessageCircle } from 'lucide-
 const socials = [
   { Icon:Instagram,     label:'Instagram', href:'https://instagram.com/graphic.essence' },
   { Icon:Facebook,      label:'Facebook',  href:'https://facebook.com/GraphicEssence' },
-  { Icon:MessageCircle, label:'WhatsApp',  href:'https://wa.me/258876775897' },
+  { Icon:MessageCircle, label:'WhatsApp',  href:'https://wa.me/258876758971' },
   { Icon:Mail,          label:'Email',     href:'mailto:cloudtv44@gmail.com' },
 ]
 
@@ -20,7 +20,7 @@ const navLinks = [
 ]
 
 const contacts = [
-  { Icon:Phone,  text:'+258 87 677 5897' },
+  { Icon:Phone,  text:'+258 87 675 8971' },
   { Icon:Mail,   text:'cloudtv44@gmail.com' },
   { Icon:MapPin, text:'Maputo, Moçambique' },
 ]
