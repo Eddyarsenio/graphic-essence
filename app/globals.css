@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
-/* ── Design Tokens ───────────────────────────────── */
 :root {
   --bg:             #F6F6F6;
   --surface:        #FFFFFF;
@@ -13,25 +12,21 @@
   --glass-border:   rgba(255, 255, 255, 0.92);
   --glass-shadow:   0 8px 32px rgba(0, 0, 0, 0.07), 0 1px 0 rgba(255,255,255,1) inset;
   --glass-hover:    rgba(255, 255, 255, 0.90);
-
   --blue:           #D01515;
   --blue-light:     #FF3333;
   --blue-glow:      rgba(208, 21, 21, 0.22);
   --violet:         #111111;
   --violet-light:   #333333;
   --violet-glow:    rgba(17, 17, 17, 0.12);
-
   --text:           #0A0A0A;
   --text-secondary: #3D3D3D;
   --text-muted:     #888888;
-
   --radius-sm:      12px;
   --radius-md:      20px;
   --radius-lg:      28px;
   --radius-xl:      40px;
 }
 
-/* ── Reset & Base ────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
@@ -40,11 +35,12 @@ body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   color: var(--text);
   overflow-x: hidden;
+  max-width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── Liquid Glass Core ───────────────────────────── */
+/* ── Liquid Glass ── */
 .glass {
   background: var(--glass);
   backdrop-filter: blur(24px) saturate(200%);
@@ -58,18 +54,13 @@ body {
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.90);
-  box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.05),
-    0 1px 0 rgba(255, 255, 255, 1) inset,
-    0 -1px 0 rgba(0, 0, 0, 0.02) inset;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.05), 0 1px 0 rgba(255,255,255,1) inset;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card:hover {
   background: rgba(255, 255, 255, 0.88);
-  box-shadow:
-    0 16px 48px rgba(0, 0, 0, 0.09),
-    0 1px 0 rgba(255, 255, 255, 1) inset;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.09), 0 1px 0 rgba(255,255,255,1) inset;
   transform: translateY(-4px);
 }
 
@@ -77,11 +68,11 @@ body {
   background: rgba(246, 246, 246, 0.82);
   backdrop-filter: blur(32px) saturate(220%);
   -webkit-backdrop-filter: blur(32px) saturate(220%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.70);
+  border-bottom: 1px solid rgba(255,255,255,0.70);
   box-shadow: 0 1px 0 rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.04);
 }
 
-/* ── Decorative Blobs ────────────────────────────── */
+/* ── Blobs ── */
 .blob {
   position: fixed;
   border-radius: 50%;
@@ -89,31 +80,30 @@ body {
   z-index: 0;
   filter: blur(100px);
 }
-.blob-blue   { background: #FFAAAA; opacity: 0.20; width: 600px; height: 600px; top: -100px; left: -150px; }
-.blob-violet { background: #CCCCCC; opacity: 0.18; width: 500px; height: 500px; top: 30%;   right: -100px; }
-.blob-cyan   { background: #FFD0D0; opacity: 0.14; width: 400px; height: 400px; bottom: 10%; left: 20%; }
+.blob-blue   { background: #FFAAAA; opacity: 0.20; width: 400px; height: 400px; top: -100px; left: -150px; }
+.blob-violet { background: #CCCCCC; opacity: 0.18; width: 350px; height: 350px; top: 30%; right: -100px; }
+.blob-cyan   { background: #FFD0D0; opacity: 0.14; width: 300px; height: 300px; bottom: 10%; left: 20%; }
 
-/* ── Typography ──────────────────────────────────── */
+/* ── Typography ── */
 .display-xl {
-  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  font-size: clamp(2rem, 8vw, 5.5rem);
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.03em;
 }
 .display-lg {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.6rem, 6vw, 3.5rem);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.025em;
 }
 .display-md {
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-size: clamp(1.3rem, 4vw, 2.25rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
-/* ── Gradient Text ───────────────────────────────── */
 .gradient-text {
   background: linear-gradient(135deg, #D01515 0%, #111111 100%);
   -webkit-background-clip: text;
@@ -121,7 +111,7 @@ body {
   background-clip: text;
 }
 
-/* ── Buttons ─────────────────────────────────────── */
+/* ── Buttons ── */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -137,6 +127,7 @@ body {
   box-shadow: 0 4px 20px rgba(208,21,21,0.30);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+  white-space: nowrap;
 }
 .btn-primary:hover {
   background: #B01010;
@@ -161,6 +152,7 @@ body {
   box-shadow: 0 4px 16px rgba(0,0,0,0.06);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+  white-space: nowrap;
 }
 .btn-glass:hover {
   background: rgba(255,255,255,0.95);
@@ -183,6 +175,7 @@ body {
   box-shadow: 0 4px 20px rgba(37,211,102,0.30);
   transition: all 0.3s ease;
   text-decoration: none;
+  white-space: nowrap;
 }
 .btn-whatsapp:hover {
   background: #1ebe5b;
@@ -190,17 +183,18 @@ body {
   transform: translateY(-2px);
 }
 
-/* ── Section Layout ──────────────────────────────── */
+/* ── Layout ── */
 .section {
   position: relative;
   z-index: 1;
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .section-label {
@@ -211,7 +205,7 @@ body {
   background: rgba(208,21,21,0.07);
   border: 1px solid rgba(208,21,21,0.18);
   border-radius: 100px;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: #D01515;
   letter-spacing: 0.06em;
@@ -219,16 +213,14 @@ body {
   margin-bottom: 20px;
 }
 
-/* ── Divider ─────────────────────────────────────── */
 .divider {
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(0,0,0,0.06), transparent);
 }
 
-/* ── Stats ───────────────────────────────────────── */
 .stat-number {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 8vw, 4rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1;
@@ -238,13 +230,7 @@ body {
   background-clip: text;
 }
 
-/* ── Portfolio Grid ──────────────────────────────── */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
-
+/* ── Portfolio ── */
 .portfolio-item {
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -252,15 +238,6 @@ body {
   position: relative;
   cursor: pointer;
 }
-
-.portfolio-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.portfolio-item:hover img { transform: scale(1.06); }
 
 .portfolio-overlay {
   position: absolute;
@@ -275,14 +252,14 @@ body {
 
 .portfolio-item:hover .portfolio-overlay { opacity: 1; }
 
-/* ── Testimonial ─────────────────────────────────── */
+/* ── Testimonial ── */
 .testimonial-card {
   background: rgba(255,255,255,0.75);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255,255,255,0.9);
   border-radius: var(--radius-lg);
-  padding: 36px;
+  padding: 28px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.05);
   transition: all 0.35s ease;
 }
@@ -291,22 +268,23 @@ body {
   transform: translateY(-4px);
 }
 
-/* ── Custom scrollbar ────────────────────────────── */
+/* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(208,21,21,0.30); }
 
-/* ── Filter pills ────────────────────────────────── */
+/* ── Filter pills ── */
 .filter-pill {
-  padding: 8px 20px;
+  padding: 8px 16px;
   border-radius: 100px;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
   border: 1px solid transparent;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .filter-pill.active {
   background: #D01515;
@@ -325,7 +303,7 @@ body {
   color: var(--text);
 }
 
-/* ── Social links ────────────────────────────────── */
+/* ── Social links ── */
 .social-link {
   width: 44px;
   height: 44px;
@@ -348,7 +326,7 @@ body {
   color: #D01515;
 }
 
-/* ── Loading screen ──────────────────────────────── */
+/* ── Loader ── */
 .loader {
   position: fixed;
   inset: 0;
@@ -370,10 +348,32 @@ body {
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ── Responsive ──────────────────────────────────── */
+/* ════════════════════════════════════════
+   MOBILE FIRST — tudo abaixo de 768px
+   ════════════════════════════════════════ */
 @media (max-width: 768px) {
-  .section { padding: 80px 0; }
-  .blob-blue { width: 300px; height: 300px; }
-  .blob-violet { width: 250px; height: 250px; }
-  .blob-cyan { width: 200px; height: 200px; }
+
+  /* Previne overflow horizontal */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .section { padding: 64px 0; }
+  .container { padding: 0 16px; }
+
+  /* Blobs menores */
+  .blob-blue   { width: 200px; height: 200px; }
+  .blob-violet { width: 180px; height: 180px; }
+  .blob-cyan   { width: 160px; height: 160px; }
+
+  /* Botões full width em mobile quando em stack */
+  .btn-primary, .btn-glass, .btn-whatsapp {
+    padding: 13px 22px;
+    font-size: 0.85rem;
+  }
+
+  /* Cards sem hover transform em mobile (evita bugs) */
+  .glass-card:hover { transform: none; }
+  .testimonial-card:hover { transform: none; }
 }
