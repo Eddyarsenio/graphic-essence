@@ -67,7 +67,7 @@ export default function Services() {
         <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }}
           style={{ textAlign:'center', marginTop:56 }}>
           <p style={{ color:'var(--text-muted)', marginBottom:20 }}>Precisa de algo específico? Vamos conversar.</p>
-          <a href="https://wa.me/258876775897" target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <a href="https://wa.me/258876758971" target="_blank" rel="noopener noreferrer" className="btn-primary">
             Solicitar Orçamento
           </a>
         </motion.div>
